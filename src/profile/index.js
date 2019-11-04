@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import UserContext from "../UserContext.js";
 
 export const Profile = () => {
+    const user = useContext(UserContext);
     return (
         <> 
-            <h1>Profile</h1>
+            {user.isLoggedIn ? <h1>Profile</h1> : <h1>Сначала залогиньтесь</h1>}
         </>
     );
 };
