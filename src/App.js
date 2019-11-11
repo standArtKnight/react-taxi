@@ -3,7 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
 import { Profile } from "./profile";
 import { Singup } from "./signup";
-import { Map } from "./map";
+import Map from "./map";
 import { Login } from "./login";
 import { Nav } from "./shared/Nav";
 import UserContext from './UserContext.js';

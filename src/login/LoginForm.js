@@ -44,7 +44,7 @@ export const LoginForm = ({ setPage }) => {
   const onSubmit = e => {
     e.preventDefault();
     setPage("profile");
-    user.isLoggedIn = true;
+    user.login();
   };
 
   return (
